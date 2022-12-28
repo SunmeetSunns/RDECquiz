@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizPage">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quizic"
+        />
+
+    <LinearLayout
+        android:id="@+id/LinearL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageButton
+            android:id="@+id/c"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/cmain"
+            android:onClick="c">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/python"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/pythonmain"
+
+            android:onClick="python"
+            android:padding="10dp">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/java"
+            android:layout_width="113dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/javamain"
+
+            android:onClick="page">
+
+        </ImageButton>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearL"
+        android:layout_marginTop="50dp"
+        android:text="Choose Your Quiz Language"
+        android:textSize="34dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="35dp">
+
+    </TextView>
+
+
+</RelativeLayout>

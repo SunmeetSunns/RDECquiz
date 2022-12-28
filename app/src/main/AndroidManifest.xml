@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.rdecquiz" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RDECquiz"
+        tools:targetApi="31" >
+        <activity
+            android:name=".Python1"
+            android:exported="false"
+            android:label="PythonQuiz"
+            android:parentActivityName=".QuizPage"/>
+        <activity
+            android:name=".C1"
+            android:exported="false"
+            android:label="C Quiz"
+            android:parentActivityName=".QuizPage" />
+        <activity
+            android:name=".PasswordMatch"
+            android:exported="false"
+            android:label="AdminDetails"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Java"
+            android:exported="false"
+            android:label="Java Page"
+            android:parentActivityName=".QuizPage" />
+        <activity
+            android:name=".QuizPage"
+            android:exported="false"
+            android:label="Quiz"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".OptionPage"
+            android:exported="false"
+            android:label=" Change Questions"
+            android:parentActivityName=".PasswordMatch" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
