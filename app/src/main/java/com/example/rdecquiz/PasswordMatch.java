@@ -30,8 +30,8 @@ public class PasswordMatch extends  AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View view) {
-        if(email.getText().toString()==Email && password.getText().toString()==PasswordMatch){
-            Intent submit=new Intent(this,OptionPage.class);
+        if(email.getText().toString().equals(Email) && password.getText().toString().equals(PasswordMatch)){
+            Intent submit=new Intent(this,QuizPage.class);
             startActivity(submit);
 
         }
